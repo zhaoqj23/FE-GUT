@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_utility
+Description: Abseil utility library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_base_internal = 20220623, absl_config = 20220623, absl_type_traits = 20220623
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

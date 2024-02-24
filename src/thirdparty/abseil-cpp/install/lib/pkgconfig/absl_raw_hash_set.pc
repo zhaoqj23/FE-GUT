@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_raw_hash_set
+Description: Abseil raw_hash_set library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_bits = 20220623, absl_compressed_tuple = 20220623, absl_config = 20220623, absl_container_common = 20220623, absl_container_memory = 20220623, absl_core_headers = 20220623, absl_endian = 20220623, absl_hash_policy_traits = 20220623, absl_hashtable_debug_hooks = 20220623, absl_memory = 20220623, absl_meta = 20220623, absl_optional = 20220623, absl_prefetch = 20220623, absl_utility = 20220623, absl_hashtablez_sampler = 20220623
+Libs: -L${libdir}  -labsl_raw_hash_set
+Cflags: -I${includedir} -DNOMINMAX

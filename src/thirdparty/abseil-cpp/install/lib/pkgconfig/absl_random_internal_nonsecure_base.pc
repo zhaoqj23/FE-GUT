@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_random_internal_nonsecure_base
+Description: Abseil random_internal_nonsecure_base library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_core_headers = 20220623, absl_inlined_vector = 20220623, absl_random_internal_pool_urbg = 20220623, absl_random_internal_salted_seed_seq = 20220623, absl_random_internal_seed_material = 20220623, absl_span = 20220623, absl_type_traits = 20220623
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

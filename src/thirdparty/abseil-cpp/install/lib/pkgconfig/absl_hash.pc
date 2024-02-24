@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_hash
+Description: Abseil hash library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_city = 20220623, absl_config = 20220623, absl_core_headers = 20220623, absl_endian = 20220623, absl_fixed_array = 20220623, absl_function_ref = 20220623, absl_meta = 20220623, absl_int128 = 20220623, absl_strings = 20220623, absl_optional = 20220623, absl_variant = 20220623, absl_utility = 20220623, absl_low_level_hash = 20220623
+Libs: -L${libdir}  -labsl_hash
+Cflags: -I${includedir} -DNOMINMAX

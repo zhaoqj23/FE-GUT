@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_random_seed_sequences
+Description: Abseil random_seed_sequences library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_config = 20220623, absl_inlined_vector = 20220623, absl_random_internal_pool_urbg = 20220623, absl_random_internal_salted_seed_seq = 20220623, absl_random_internal_seed_material = 20220623, absl_random_seed_gen_exception = 20220623, absl_span = 20220623
+Libs: -L${libdir}  -labsl_random_seed_sequences
+Cflags: -I${includedir} -DNOMINMAX

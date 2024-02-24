@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_hashtablez_sampler
+Description: Abseil hashtablez_sampler library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_base = 20220623, absl_config = 20220623, absl_exponential_biased = 20220623, absl_sample_recorder = 20220623, absl_synchronization = 20220623
+Libs: -L${libdir}  -labsl_hashtablez_sampler
+Cflags: -I${includedir} -DNOMINMAX

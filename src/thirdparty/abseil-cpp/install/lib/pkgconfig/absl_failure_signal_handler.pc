@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_failure_signal_handler
+Description: Abseil failure_signal_handler library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_examine_stack = 20220623, absl_stacktrace = 20220623, absl_base = 20220623, absl_config = 20220623, absl_core_headers = 20220623, absl_raw_logging_internal = 20220623
+Libs: -L${libdir}  -labsl_failure_signal_handler
+Cflags: -I${includedir} -DNOMINMAX

@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_random_internal_pcg_engine
+Description: Abseil random_internal_pcg_engine library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_config = 20220623, absl_int128 = 20220623, absl_random_internal_fastmath = 20220623, absl_random_internal_iostream_state_saver = 20220623, absl_type_traits = 20220623
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

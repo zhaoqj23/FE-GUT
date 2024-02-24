@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_int128
+Description: Abseil int128 library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_config = 20220623, absl_core_headers = 20220623, absl_bits = 20220623
+Libs: -L${libdir}  -labsl_int128
+Cflags: -I${includedir} -DNOMINMAX

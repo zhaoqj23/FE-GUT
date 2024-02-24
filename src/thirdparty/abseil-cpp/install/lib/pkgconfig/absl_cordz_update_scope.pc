@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_cordz_update_scope
+Description: Abseil cordz_update_scope library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_config = 20220623, absl_cord_internal = 20220623, absl_cordz_info = 20220623, absl_cordz_update_tracker = 20220623, absl_core_headers = 20220623
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

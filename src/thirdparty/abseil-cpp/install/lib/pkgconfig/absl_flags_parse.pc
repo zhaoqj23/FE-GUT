@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_flags_parse
+Description: Abseil flags_parse library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_config = 20220623, absl_core_headers = 20220623, absl_flags_config = 20220623, absl_flags = 20220623, absl_flags_commandlineflag = 20220623, absl_flags_commandlineflag_internal = 20220623, absl_flags_internal = 20220623, absl_flags_private_handle_accessor = 20220623, absl_flags_program_name = 20220623, absl_flags_reflection = 20220623, absl_flags_usage = 20220623, absl_strings = 20220623, absl_synchronization = 20220623
+Libs: -L${libdir}  -labsl_flags_parse
+Cflags: -I${includedir} -DNOMINMAX

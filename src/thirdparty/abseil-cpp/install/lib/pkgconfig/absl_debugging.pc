@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_debugging
+Description: Abseil debugging library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_stacktrace = 20220623, absl_leak_check = 20220623
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

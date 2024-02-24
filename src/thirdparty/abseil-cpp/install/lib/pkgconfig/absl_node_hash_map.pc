@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_node_hash_map
+Description: Abseil node_hash_map library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_container_memory = 20220623, absl_core_headers = 20220623, absl_hash_function_defaults = 20220623, absl_node_slot_policy = 20220623, absl_raw_hash_map = 20220623, absl_algorithm_container = 20220623, absl_memory = 20220623
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

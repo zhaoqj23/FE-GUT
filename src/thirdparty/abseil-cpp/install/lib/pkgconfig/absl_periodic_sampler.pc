@@ -1,0 +1,12 @@
+prefix=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install
+exec_prefix=${prefix}
+libdir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/lib
+includedir=/home/zhaoqj/c++files/OB_GINS/src/thirdparty/abseil-cpp/install/include
+
+Name: absl_periodic_sampler
+Description: Abseil periodic_sampler library
+URL: https://abseil.io/
+Version: 20220623
+Requires: absl_core_headers = 20220623, absl_exponential_biased = 20220623
+Libs: -L${libdir}  -labsl_periodic_sampler
+Cflags: -I${includedir} -DNOMINMAX
