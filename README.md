@@ -9,18 +9,18 @@ The library was built and tested in Ubuntu 20.04. The results may be different f
 2) Eigen3
 3) Ceres Solver
 ### Clone the repository
-`git clone https://github.com/zhaoqj23/GNSS-UWB.git`
+```git clone https://github.com/zhaoqj23/GNSS-UWB.git```
 ### Build the library
-`
+```
 cd ~/GNSS-UWB
 mkdir build && cd build
 cmake ..
 make -j8
-`
+```
 ### Run demo
-`
+```
 cd ~/GNSS-UWB
 ./bin/gnss_uwb
-`
+```
 ## Acknowledgements
 The authors would like to acknowledge Dr. Xiaoji Niu and the Integrated and Intelligent Navigation (i2Nav) group from Wuhan University for providing the OB_GINS software that was used in the library.
