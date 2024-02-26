@@ -45,11 +45,11 @@ int main(int argc, char *argv[]) {
     std::vector<double *> last_marginalization_parameter_blocks;
 
     // TODO: replace it with the real path
-    std::string psepath = "/home/zhaoqj23/GNSS_UWB/dataset/psdata.txt";
-    std::string psratepath = "/home/zhaoqj23/GNSS_UWB/dataset/psratedata.txt";
-    std::string satpospath = "/home/zhaoqj23/GNSS_UWB/dataset/satposdata.txt";
-    std::string satvelpath = "/home/zhaoqj23/GNSS_UWB/dataset/satveldata.txt";
-    std::string uwbpath = "/home/zhaoqj23/GNSS_UWB/dataset/uwbdata.txt";
+    std::string psepath = "/home/zhaoqj23/Documents/GNSS-UWB/dataset/psdata.txt";
+    std::string psratepath = "/home/zhaoqj23/Documents/GNSS-UWB/dataset/psratedata.txt";
+    std::string satpospath = "/home/zhaoqj23/Documents/GNSS-UWB/dataset/satposdata.txt";
+    std::string satvelpath = "/home/zhaoqj23/Documents/GNSS-UWB/dataset/satveldata.txt";
+    std::string uwbpath = "/home/zhaoqj23/Documents/GNSS-UWB/dataset/uwbdata.txt";
     
     // file loader and saver
     PSFileLoader psefile(psepath);
@@ -57,8 +57,8 @@ int main(int argc, char *argv[]) {
     SATPOSFileLoader satposfile(satpospath);
     SATVELFileLoader satvelfile(satvelpath);
     UWBFileLoader uwbfile(uwbpath);
-    FileSaver navfile("/home/zhaoqj23/GNSS_UWB/dataset/navdata.txt",7,FileSaver::TEXT);
-    FileSaver tdfile("/home/zhaoqj23/GNSS_UWB/dataset/tddata.txt",2,FileSaver::TEXT);
+    FileSaver navfile("/home/zhaoqj23/Documents/GNSS-UWB/dataset/navdata.txt",7,FileSaver::TEXT);
+    FileSaver tdfile("/home/zhaoqj23/Documents/GNSS-UWB/dataset/tddata.txt",2,FileSaver::TEXT);
 
     if (!psefile.isOpen() || !psratefile.isOpen() || !satposfile.isOpen() || !satvelfile.isOpen() || !uwbfile.isOpen() || !navfile.isOpen() || !tdfile.isOpen()) {
         std::cout << "Failed to open data file" << std::endl;
@@ -194,7 +194,7 @@ int main(int argc, char *argv[]) {
         }
 
         options.max_num_iterations = 200;
-        solver.Solve(options, &problem, &summary);
+        if(i > 50) solver.Solve(options, &problem, &summary);
         // std::cout << summary.BriefReport() << "\n";
 
 

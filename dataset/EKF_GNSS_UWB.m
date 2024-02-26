@@ -46,7 +46,7 @@ R_ecef2enu = [-sin(recPos0(2)*pi/180),              -sin(recPos0(1)*pi/180)*cos(
 
 vu0 = R_ecef2enu*[0;vini;0];
 X0 = [ru0;vu0;au0;tu0;fu0;td0]; 
-P0 = 100*eye(length(X0));
+P0 = 0.1*eye(length(X0));
 Sj = [0.4 0.4 0.4]; St = 36;Sf = 0.01;Sdt = 0.01;
 std_p = 0.4; std_pr = 0.05; std_uwb = 0.5;
 
