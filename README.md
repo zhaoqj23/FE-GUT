@@ -23,4 +23,4 @@ cd ~/GNSS-UWB
 ./bin/gnss_uwb
 ```
 ## Acknowledgements
-The authors would like to acknowledge Dr. Xiaoji Niu and the Integrated and Intelligent Navigation (i2Nav) group from Wuhan University for providing the OB_GINS software that was used in the library.
+We would like to acknowledge Dr. Xiaoji Niu and the Integrated and Intelligent Navigation (i2Nav) group from Wuhan University for providing the OB_GINS software that was used in the library. We would also like to acknowledge Mr. Yihan Guo for his help in this project.
