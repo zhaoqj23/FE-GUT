@@ -1,5 +1,5 @@
 # FE-GUT: Factor Graph Optimization hybrid with Extended Kalman Filter for tightly coupled GNSS/UWB Integration
-We open-source the source code and simulation dataset of a bridging Factor Graph Optimization (FGO) and Extended Kalman Filter (EKF) architecture for tightly coupled GNSS/UWB integration with online temporal calibration. The main contributions are as follows:
+We open-source the source code and simulation dataset of a novel architecture in which the Factor Graph Optimization (FGO) is hybrid with the Extended Kalman Filter (EKF) for tightly coupled GNSS/UWB integration with online Temporal calibration (FE-GUT). The main contributions are as follows:
 * We introduce the **[Graphical State Space Model (GSSM)](https://github.com/shaolinbit/GraphicalStateSpaceModel)** which is a novel discretization method into the tightly coupled GNSS/UWB integration. 
 * An architecture in which FGO is hybrid with EKF is designed to effectively leverage the respective merits of both methods.
 ## How to Use This Library
