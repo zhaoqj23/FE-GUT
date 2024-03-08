@@ -9,17 +9,17 @@ The library was built and tested in Ubuntu 20.04. The results may be different f
 2) Eigen3
 3) Ceres Solver
 ### Clone the repository
-```git clone https://github.com/zhaoqj23/GNSS-UWB.git```
+```git clone https://github.com/zhaoqj23/FE-GUT.git```
 ### Build the library
 ```
-cd ~/GNSS-UWB
+cd ~/FE-GUT
 mkdir build && cd build
 cmake ..
 make -j8
 ```
 ### Run demo
 ```
-cd ~/GNSS-UWB
+cd ~/FE-GUT
 ./bin/gnss_uwb
 ```
 ## Acknowledgements
