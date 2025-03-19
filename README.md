@@ -2,6 +2,7 @@
 We open-source the source code and simulation dataset of a novel architecture in which the Factor Graph Optimization (FGO) is hybrid with the Extended Kalman Filter (EKF) for tightly coupled GNSS/UWB integration with online Temporal calibration (FE-GUT). The main contributions are as follows:
 * We introduce the **[Graphical State Space Model (GSSM)](https://github.com/shaolinbit/GraphicalStateSpaceModel)** which is a novel discretization method into the tightly coupled GNSS/UWB integration. 
 * An architecture in which FGO is hybrid with EKF is designed to effectively leverage the respective merits of both methods.
+
 Furthermore, we employ a nonlinearity analysis approach to investigate the inherent reasons why GSSM can improve state estimation accuracy. We then validate its effectiveness through simulations in two case studies: radar tracking and GNSS/UWB tightly coupled integration.
 ## How to Use This Library
 The library was built and tested in Ubuntu 20.04. The results may be different for different OS. If any problem was found by you, please propose an issue or report it to zhaoqj23@mails.tsinghua.edu.cn.
